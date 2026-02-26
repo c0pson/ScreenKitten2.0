@@ -23,7 +23,7 @@ class App(ctk.CTk):
         self.after(100, self.move_window)
 
     def move_window(self) -> None:
-        if random.random() > 0.9992:
+        if random.random() > 0.9991:
             self.velocity *= -1
         if self.window_width_pos > self.max_x_position or self.window_width_pos < -90:
             self.velocity *= -1
